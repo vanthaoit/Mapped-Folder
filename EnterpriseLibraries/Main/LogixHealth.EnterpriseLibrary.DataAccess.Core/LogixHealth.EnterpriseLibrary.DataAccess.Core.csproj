@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Copyright>Copyright © LogixHealth 2019</Copyright>
+    <Description>LogixHealth Enterprise Library for Data Access using .NET Core</Description>
+    <Company>LogixHealth Solutions Pvt. Ltd</Company>
+    <Authors>LogixHealth Solutions Pvt. Ltd</Authors>
+    <Version>2019.1.0.0</Version>
+    <RootNamespace>LogixHealth.EnterpriseLibrary.DataAccess</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LogixHealth.EnterpriseLibrary.Core.Cryptography.csproj.vspscc" />
+    <None Remove="LogixHealth.EnterpriseLibrary.Core.DataAccess.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\CodeFiles\DataAccess\IQueryRepository.cs" Link="IQueryRepository.cs" />
+    <Compile Include="..\CodeFiles\DataAccess\IRepository.cs" Link="IRepository.cs" />
+    <Compile Include="..\CodeFiles\DataAccess\QueryRepository.cs" Link="QueryRepository.cs" />
+    <Compile Include="..\CodeFiles\DataAccess\Repository.cs" Link="Repository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.5" />
+  </ItemGroup>
+
+</Project>

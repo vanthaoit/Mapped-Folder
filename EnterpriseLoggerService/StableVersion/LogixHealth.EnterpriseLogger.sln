@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLogger.Services", "LogixHealth.EnterpriseLogger.Services\LogixHealth.EnterpriseLogger.Services.csproj", "{542E320E-C837-4A96-81A6-69B613EF8B71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{D3CE547F-11D6-4247-BE70-D9DC0CFA91BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLibrary.DataAccess", "..\..\EnterpriseLibraries\StableVersion\LogixHealth.EnterpriseLibrary.DataAccess\LogixHealth.EnterpriseLibrary.DataAccess.csproj", "{F7516A07-4C53-4EC1-A54B-B7CE021F4DB3}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LogixHealth.EnterpriseLogger.Database", "LogixHealth.EnterpriseLogger.Database\LogixHealth.EnterpriseLogger.Database.sqlproj", "{C5C4D144-877E-4844-B744-180DBEB3BBD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLogger.Services.DataContracts", "LogixHealth.EnterpriseLogger.Services.DataContracts\LogixHealth.EnterpriseLogger.Services.DataContracts.csproj", "{EC1608F7-6D0B-4ABD-A896-DDA63E6F5DD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLogger.Services.ServiceContracts", "LogixHealth.EnterpriseLogger.Services.ServiceContracts\LogixHealth.EnterpriseLogger.Services.ServiceContracts.csproj", "{443DB42B-FF93-4943-9B09-4170ACB84461}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{542E320E-C837-4A96-81A6-69B613EF8B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542E320E-C837-4A96-81A6-69B613EF8B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542E320E-C837-4A96-81A6-69B613EF8B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542E320E-C837-4A96-81A6-69B613EF8B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7516A07-4C53-4EC1-A54B-B7CE021F4DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7516A07-4C53-4EC1-A54B-B7CE021F4DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7516A07-4C53-4EC1-A54B-B7CE021F4DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7516A07-4C53-4EC1-A54B-B7CE021F4DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C4D144-877E-4844-B744-180DBEB3BBD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C4D144-877E-4844-B744-180DBEB3BBD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C4D144-877E-4844-B744-180DBEB3BBD0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C5C4D144-877E-4844-B744-180DBEB3BBD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C4D144-877E-4844-B744-180DBEB3BBD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C4D144-877E-4844-B744-180DBEB3BBD0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EC1608F7-6D0B-4ABD-A896-DDA63E6F5DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1608F7-6D0B-4ABD-A896-DDA63E6F5DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1608F7-6D0B-4ABD-A896-DDA63E6F5DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1608F7-6D0B-4ABD-A896-DDA63E6F5DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{443DB42B-FF93-4943-9B09-4170ACB84461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{443DB42B-FF93-4943-9B09-4170ACB84461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{443DB42B-FF93-4943-9B09-4170ACB84461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{443DB42B-FF93-4943-9B09-4170ACB84461}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7516A07-4C53-4EC1-A54B-B7CE021F4DB3} = {D3CE547F-11D6-4247-BE70-D9DC0CFA91BD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9A79F16-CBBA-4627-B6CD-5723600F6913}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bedtfsapp001:8080/tfs/main
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\..\\EnterpriseLibraries\\StableVersion\\LogixHealth.EnterpriseLibrary.DataAccess\\LogixHealth.EnterpriseLibrary.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName1 = LogixHealth.EnterpriseLogger.sln
+		SccProjectName1 = ../../EnterpriseLibraries/StableVersion/LogixHealth.EnterpriseLibrary.DataAccess
+		SccLocalPath1 = ..\\..\\EnterpriseLibraries\\StableVersion\\LogixHealth.EnterpriseLibrary.DataAccess
+		SccProjectUniqueName2 = LogixHealth.EnterpriseLogger.Services\\LogixHealth.EnterpriseLogger.Services.csproj
+		SccProjectName2 = LogixHealth.EnterpriseLogger.Services
+		SccLocalPath2 = LogixHealth.EnterpriseLogger.Services
+		SccProjectUniqueName3 = LogixHealth.EnterpriseLogger.Database\\LogixHealth.EnterpriseLogger.Database.sqlproj
+		SccProjectName3 = LogixHealth.EnterpriseLogger.Database
+		SccLocalPath3 = LogixHealth.EnterpriseLogger.Database
+		SccProjectUniqueName4 = LogixHealth.EnterpriseLogger.Services.DataContracts\\LogixHealth.EnterpriseLogger.Services.DataContracts.csproj
+		SccProjectName4 = LogixHealth.EnterpriseLogger.Services.DataContracts
+		SccLocalPath4 = LogixHealth.EnterpriseLogger.Services.DataContracts
+		SccProjectUniqueName5 = LogixHealth.EnterpriseLogger.Services.ServiceContracts\\LogixHealth.EnterpriseLogger.Services.ServiceContracts.csproj
+		SccProjectName5 = LogixHealth.EnterpriseLogger.Services.ServiceContracts
+		SccLocalPath5 = LogixHealth.EnterpriseLogger.Services.ServiceContracts
+	EndGlobalSection
+EndGlobal

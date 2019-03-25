@@ -1,0 +1,191 @@
+﻿
+<link rel="stylesheet" href="http://qascripts.logixhealth.com/css/header.css" />
+
+<div class="page-header">
+    @{
+        if (LogixHealth.EnterpriseLibrary.Extensions.HeadersAndFooters.LogixHeader.ConnectHeader != null)
+        {
+            if (LogixHealth.EnterpriseLibrary.Extensions.HeadersAndFooters.LogixHeader.ConnectHeader.TheNewConnectHeader != null)
+            {
+                @Html.Raw(LogixHealth.EnterpriseLibrary.Extensions.HeadersAndFooters.LogixHeader.ConnectHeader.TheNewConnectHeader.OutputHtmlHeader)
+
+                <div id="modals">
+                    <div class="modal warning-modal" id="settings-warning-modal">
+                        <div class="header">
+                            <h1>Warning</h1>
+                        </div>
+                        <div style="padding:15px 7px 33px 5.5px!important;">
+                            <p id="warning-message"> </p>
+                        </div>
+                        <div class="buttons" style="margin:0 0 0!important ">
+                            <ul class="right" style="margin-right: 5%;">
+                                <li>
+                                    <input type="button" class="button" value="CLOSE" onclick="$.colorbox.close();" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            }
+            else if (LogixHealth.EnterpriseLibrary.Extensions.HeadersAndFooters.LogixHeader.ConnectHeader.TheOldConnectHeader != null)
+            {
+                var header = LogixHealth.EnterpriseLibrary.Extensions.HeadersAndFooters.LogixHeader.ConnectHeader.TheOldConnectHeader;
+                var currentTime = System.DateTime.Now.Hour;
+                var greetings = "Good ";
+
+                if (currentTime < 12)
+                {
+                    greetings = greetings + "Morning, " + LogixHealth.EnterpriseLibrary.Extensions.HeadersAndFooters.LogixHeader.ConnectHeader.TheOldConnectHeader.DisplayName;
+                }
+                else if (currentTime >= 12 && currentTime <= 18)
+                {
+                    greetings = greetings + "Afternoon, " + LogixHealth.EnterpriseLibrary.Extensions.HeadersAndFooters.LogixHeader.ConnectHeader.TheOldConnectHeader.DisplayName;
+                }
+                else
+                {
+                    greetings = greetings + "Evening, " + LogixHealth.EnterpriseLibrary.Extensions.HeadersAndFooters.LogixHeader.ConnectHeader.TheOldConnectHeader.DisplayName;
+                }
+
+                <div class="nav-bar">
+                    <div class="container cf">
+                        <a href="#"><i class="icn logo application"></i></a>
+                        <ul class="nav">
+                            <li class="level-1-first" style="z-index: 1">
+                                <a class="user" tabindex="0" id="userName">
+                                    <span id="spnGreetings">@greetings</span>
+                                </a>
+                                <div class="level-2" style="height: 32px;">
+                                    <dl class="app-alerts user-menu">
+                                        <dt>
+                                            <input type="hidden" id="hdnLoggedUserId" />
+                                            <ul class="main">
+                                                <li><a href="~/Home/Logout"><i class="icn logout"></i></a></li>
+                                                <li style="margin-top: 5px;"><h6><a class=" clr1-text" href="~/Home/Logout">Logout</a></h6></li>
+                                                @Html.Hidden("ApplicationPath", Url.Content("~/"))
+                                            </ul>
+                                        </dt>
+                                    </dl>
+                                </div>
+                            </li>
+                            @*<li class="level-1" title="Help Center" style="z-index: 1">
+                                    <a class="icon" href="~/Content/HelpDocumentation/index.htm" target="_blank"><i class="icn help external"></i></a>
+                                </li>*@
+                            @*<li class="level-1-last" title="Settings" style="z-index: 1">
+                                    <a class="icon" href="#" id="settingsPage"><i class="icn settings external"></i></a>
+                                </li>*@
+                            <li class="level-1" title="Home" id="connectHome" style="z-index: 1">
+                                <a class="icon" href="#">
+                                    <i class="icn home external"></i>
+                                </a>
+                            </li>
+                            <li class="switch-app" style="z-index: 1">
+                                <div class="app-menu right">
+                                    <a tabindex="0" id="switchApp" class="app-menu-btn user" style="text-decoration: none">
+                                        <span>My Applications</span>
+                                    </a>
+                                    <ul style="display: none" class="app-list user" id="appList">
+                                        @if (header != null && header.UserApplications.Count() > 0)
+                                        {
+                                            foreach (var userApplication in header.UserApplications)
+                                            {
+                                                var applicationName = userApplication.Name;
+                                                var applicationClass = applicationName.ToLower().Replace(" ", "");
+
+                                                // dev environment has application duplicates with (L)
+                                                if (new System.Text.RegularExpressions.Regex("^[a-zA-Z0-9]*$").IsMatch(applicationClass) == false)
+                                                {
+                                                    applicationClass = "application";
+                                                }
+
+                                                var lastApplication = (userApplication == header.UserApplications.Last()) ? "last" : "";
+                                                var applicationUrl = string.Empty;
+
+                                                if (!string.IsNullOrEmpty(userApplication.Url))
+                                                {
+                                                    if (userApplication.Name.Contains("Diagnosis") && !userApplication.Url.Contains("?username="))
+                                                    {
+                                                        userApplication.Url += "?username=" + header.DisplayName;
+                                                    }
+
+                                                    applicationUrl = (userApplication.Url.StartsWith("http")) ? userApplication.Url : "http://" + userApplication.Url;
+                                                }
+
+                                                <li class="@lastApplication">
+                                                    <a href="#" onclick="return LoadExternalApp('@userApplication.Name', '@applicationUrl', '@userApplication.OpenInNewWindow');">
+                                                        <i class="icn app-logo @applicationClass" title="@userApplication.Name"></i>
+                                                    </a>
+                                                </li>
+                                            }
+                                        }
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="nav-bar">
+                    @{
+                        var currentTime = System.DateTime.Now.Hour;
+                        var greetings = "Good ";
+
+                        if (currentTime < 12)
+                        {
+                            greetings = greetings + "Morning, Guest User";
+                        }
+                        else if (currentTime >= 12 && currentTime <= 18)
+                        {
+                            greetings = greetings + "Afternoon, Guest User";
+                        }
+                        else
+                        {
+                            greetings = greetings + "Evening, Guest User";
+                        }
+                    }
+                    <div class="container cf">
+                        <ul class="nav">
+                            <li class="level-1-first" style="z-index: 1">
+                                <a class="user" tabindex="0" id="userName">
+                                    <span id="spnGreetings">@greetings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="nav-bar">
+                @{
+                    var currentTime = System.DateTime.Now.Hour;
+                    var greetings = "Good ";
+
+                    if (currentTime < 12)
+                    {
+                        greetings = greetings + "Morning, Guest User";
+                    }
+                    else if (currentTime >= 12 && currentTime <= 18)
+                    {
+                        greetings = greetings + "Afternoon, Guest User";
+                    }
+                    else
+                    {
+                        greetings = greetings + "Evening, Guest User";
+                    }
+                }
+                <div class="container cf">
+                    <ul class="nav">
+                        <li class="level-1-first" style="z-index: 1">
+                            <a class="user" tabindex="0" id="userName">
+                                <span id="spnGreetings">@greetings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        }
+    }
+</div>

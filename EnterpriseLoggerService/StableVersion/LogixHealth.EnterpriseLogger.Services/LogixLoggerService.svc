@@ -1,0 +1,5 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="LogixHealth.EnterpriseLogger.Services.LogixLoggerService" 
+    CodeBehind="LogixLoggerService.svc.cs" %>

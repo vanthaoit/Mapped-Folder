@@ -1,0 +1,142 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogixHealth.EnterpriseLibrary.Cryptography.Core", "LogixHealth.EnterpriseLibrary.Cryptography.Core\LogixHealth.EnterpriseLibrary.Cryptography.Core.csproj", "{BD2CA36C-F288-4976-9E57-A99EF51DCEE4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogixHealth.EnterpriseLibrary.DataAccess.Core", "LogixHealth.EnterpriseLibrary.DataAccess.Core\LogixHealth.EnterpriseLibrary.DataAccess.Core.csproj", "{5CDDB4F0-F458-4588-B670-CF3540C3B2B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLibrary.DataAccess", "LogixHealth.EnterpriseLibrary.DataAccess\LogixHealth.EnterpriseLibrary.DataAccess.csproj", "{F7516A07-4C53-4EC1-A54B-B7CE021F4DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLibrary.Cryptography", "LogixHealth.EnterpriseLibrary.Cryptography\LogixHealth.EnterpriseLibrary.Cryptography.csproj", "{D6658143-D3ED-4B5B-AEDB-4151518FD212}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core", "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core\LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core.csproj", "{0BA68DA7-0E51-4E4C-B632-E855225B3C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLibrary.AppServices.Gateway", "LogixHealth.EnterpriseLibrary.AppServices.Gateway\LogixHealth.EnterpriseLibrary.AppServices.Gateway.csproj", "{A77671A9-E654-4F8C-9C8B-3098A169483B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogixHealth.EnterpriseLibrary.Extensions.Core", "LogixHealth.EnterpriseLibrary.Extensions.Core\LogixHealth.EnterpriseLibrary.Extensions.Core.csproj", "{8B3C5CAE-01A1-4266-9186-9D989036C5E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLibrary.Email.Gateway", "LogixHealth.EnterpriseLibrary.Email.Gateway\LogixHealth.EnterpriseLibrary.Email.Gateway.csproj", "{D4E9BEBC-F6EC-46C9-850A-3AE6DD19E3A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogixHealth.EnterpriseLibrary.Email.Gateway.Core", "LogixHealth.EnterpriseLibrary.Email.Gateway.Core\LogixHealth.EnterpriseLibrary.Email.Gateway.Core.csproj", "{AC72FBBB-B5FC-4A4A-9D08-5B9AEEF9A0FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogixHealth.EnterpriseLibrary.ModelAttributes.Core", "LogixHealth.EnterpriseLibrary.ModelAttributes.Core\LogixHealth.EnterpriseLibrary.ModelAttributes.Core.csproj", "{295D22A5-7E4F-476C-BEEC-A50A431EF481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLibrary.ModelAttributes", "LogixHealth.EnterpriseLibrary.ModelAttributes\LogixHealth.EnterpriseLibrary.ModelAttributes.csproj", "{8EED096F-9005-4E91-B0D3-3ACD2BDE6E42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLibrary.Extensions", "LogixHealth.EnterpriseLibrary.Extensions\LogixHealth.EnterpriseLibrary.Extensions.csproj", "{8B2E0E4D-76A0-42EC-81C7-066B6C5F41B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLogger.Extensions", "..\..\EnterpriseLoggerService\StableVersion\LogixHealth.EnterpriseLogger.Extensions\LogixHealth.EnterpriseLogger.Extensions.csproj", "{EA9CD718-893C-43C6-B15F-E73087FF1EF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD2CA36C-F288-4976-9E57-A99EF51DCEE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2CA36C-F288-4976-9E57-A99EF51DCEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2CA36C-F288-4976-9E57-A99EF51DCEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2CA36C-F288-4976-9E57-A99EF51DCEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CDDB4F0-F458-4588-B670-CF3540C3B2B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDDB4F0-F458-4588-B670-CF3540C3B2B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDDB4F0-F458-4588-B670-CF3540C3B2B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDDB4F0-F458-4588-B670-CF3540C3B2B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7516A07-4C53-4EC1-A54B-B7CE021F4DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7516A07-4C53-4EC1-A54B-B7CE021F4DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7516A07-4C53-4EC1-A54B-B7CE021F4DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7516A07-4C53-4EC1-A54B-B7CE021F4DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6658143-D3ED-4B5B-AEDB-4151518FD212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6658143-D3ED-4B5B-AEDB-4151518FD212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6658143-D3ED-4B5B-AEDB-4151518FD212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6658143-D3ED-4B5B-AEDB-4151518FD212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BA68DA7-0E51-4E4C-B632-E855225B3C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA68DA7-0E51-4E4C-B632-E855225B3C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA68DA7-0E51-4E4C-B632-E855225B3C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA68DA7-0E51-4E4C-B632-E855225B3C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A77671A9-E654-4F8C-9C8B-3098A169483B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A77671A9-E654-4F8C-9C8B-3098A169483B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A77671A9-E654-4F8C-9C8B-3098A169483B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A77671A9-E654-4F8C-9C8B-3098A169483B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3C5CAE-01A1-4266-9186-9D989036C5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3C5CAE-01A1-4266-9186-9D989036C5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3C5CAE-01A1-4266-9186-9D989036C5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3C5CAE-01A1-4266-9186-9D989036C5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4E9BEBC-F6EC-46C9-850A-3AE6DD19E3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E9BEBC-F6EC-46C9-850A-3AE6DD19E3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E9BEBC-F6EC-46C9-850A-3AE6DD19E3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E9BEBC-F6EC-46C9-850A-3AE6DD19E3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC72FBBB-B5FC-4A4A-9D08-5B9AEEF9A0FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC72FBBB-B5FC-4A4A-9D08-5B9AEEF9A0FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC72FBBB-B5FC-4A4A-9D08-5B9AEEF9A0FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC72FBBB-B5FC-4A4A-9D08-5B9AEEF9A0FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{295D22A5-7E4F-476C-BEEC-A50A431EF481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{295D22A5-7E4F-476C-BEEC-A50A431EF481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{295D22A5-7E4F-476C-BEEC-A50A431EF481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{295D22A5-7E4F-476C-BEEC-A50A431EF481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EED096F-9005-4E91-B0D3-3ACD2BDE6E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EED096F-9005-4E91-B0D3-3ACD2BDE6E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EED096F-9005-4E91-B0D3-3ACD2BDE6E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EED096F-9005-4E91-B0D3-3ACD2BDE6E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B2E0E4D-76A0-42EC-81C7-066B6C5F41B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2E0E4D-76A0-42EC-81C7-066B6C5F41B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2E0E4D-76A0-42EC-81C7-066B6C5F41B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2E0E4D-76A0-42EC-81C7-066B6C5F41B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9CD718-893C-43C6-B15F-E73087FF1EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9CD718-893C-43C6-B15F-E73087FF1EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9CD718-893C-43C6-B15F-E73087FF1EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9CD718-893C-43C6-B15F-E73087FF1EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9A79F16-CBBA-4627-B6CD-5723600F6913}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bedtfsapp001:8080/tfs/main
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LogixHealth.EnterpriseLibrary.Cryptography.Core\\LogixHealth.EnterpriseLibrary.Cryptography.Core.csproj
+		SccProjectName1 = LogixHealth.EnterpriseLibrary.Cryptography.Core
+		SccLocalPath1 = LogixHealth.EnterpriseLibrary.Cryptography.Core
+		SccProjectUniqueName2 = LogixHealth.EnterpriseLibrary.ModelAttributes\\LogixHealth.EnterpriseLibrary.ModelAttributes.csproj
+		SccProjectName2 = LogixHealth.EnterpriseLibrary.ModelAttributes
+		SccLocalPath2 = LogixHealth.EnterpriseLibrary.ModelAttributes
+		SccProjectUniqueName3 = LogixHealth.EnterpriseLibrary.ModelAttributes.Core\\LogixHealth.EnterpriseLibrary.ModelAttributes.Core.csproj
+		SccProjectName3 = LogixHealth.EnterpriseLibrary.ModelAttributes.Core
+		SccLocalPath3 = LogixHealth.EnterpriseLibrary.ModelAttributes.Core
+		SccProjectUniqueName4 = LogixHealth.EnterpriseLibrary.Email.Gateway.Core\\LogixHealth.EnterpriseLibrary.Email.Gateway.Core.csproj
+		SccProjectName4 = LogixHealth.EnterpriseLibrary.Email.Gateway.Core
+		SccLocalPath4 = LogixHealth.EnterpriseLibrary.Email.Gateway.Core
+		SccProjectUniqueName5 = LogixHealth.EnterpriseLibrary.Email.Gateway\\LogixHealth.EnterpriseLibrary.Email.Gateway.csproj
+		SccProjectName5 = LogixHealth.EnterpriseLibrary.Email.Gateway
+		SccLocalPath5 = LogixHealth.EnterpriseLibrary.Email.Gateway
+		SccProjectUniqueName6 = LogixHealth.EnterpriseLibrary.Extensions.Core\\LogixHealth.EnterpriseLibrary.Extensions.Core.csproj
+		SccProjectName6 = LogixHealth.EnterpriseLibrary.Extensions.Core
+		SccLocalPath6 = LogixHealth.EnterpriseLibrary.Extensions.Core
+		SccProjectUniqueName7 = LogixHealth.EnterpriseLibrary.AppServices.Gateway\\LogixHealth.EnterpriseLibrary.AppServices.Gateway.csproj
+		SccProjectName7 = LogixHealth.EnterpriseLibrary.AppServices.Gateway
+		SccLocalPath7 = LogixHealth.EnterpriseLibrary.AppServices.Gateway
+		SccProjectUniqueName8 = LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core\\LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core.csproj
+		SccProjectName8 = LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core
+		SccLocalPath8 = LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core
+		SccProjectUniqueName9 = LogixHealth.EnterpriseLibrary.Cryptography\\LogixHealth.EnterpriseLibrary.Cryptography.csproj
+		SccProjectName9 = LogixHealth.EnterpriseLibrary.Cryptography
+		SccLocalPath9 = LogixHealth.EnterpriseLibrary.Cryptography
+		SccProjectUniqueName10 = LogixHealth.EnterpriseLibrary.DataAccess\\LogixHealth.EnterpriseLibrary.DataAccess.csproj
+		SccProjectName10 = LogixHealth.EnterpriseLibrary.DataAccess
+		SccLocalPath10 = LogixHealth.EnterpriseLibrary.DataAccess
+		SccProjectUniqueName11 = LogixHealth.EnterpriseLibrary.DataAccess.Core\\LogixHealth.EnterpriseLibrary.DataAccess.Core.csproj
+		SccProjectName11 = LogixHealth.EnterpriseLibrary.DataAccess.Core
+		SccLocalPath11 = LogixHealth.EnterpriseLibrary.DataAccess.Core
+		SccProjectUniqueName12 = LogixHealth.EnterpriseLibrary.Extensions\\LogixHealth.EnterpriseLibrary.Extensions.csproj
+		SccProjectName12 = LogixHealth.EnterpriseLibrary.Extensions
+		SccLocalPath12 = LogixHealth.EnterpriseLibrary.Extensions
+		SccProjectUniqueName13 = ..\\..\\EnterpriseLoggerService\\StableVersion\\LogixHealth.EnterpriseLogger.Extensions\\LogixHealth.EnterpriseLogger.Extensions.csproj
+		SccProjectName13 = ../../EnterpriseLoggerService/StableVersion/LogixHealth.EnterpriseLogger.Extensions
+		SccLocalPath13 = ..\\..\\EnterpriseLoggerService\\StableVersion\\LogixHealth.EnterpriseLogger.Extensions
+	EndGlobalSection
+EndGlobal

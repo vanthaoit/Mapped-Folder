@@ -1,0 +1,27 @@
+﻿<footer style="position: relative !important;">
+    @{
+        if (LogixHealth.EnterpriseLibrary.Extensions.HeadersAndFooters.LogixFooter.ConnectFooter != null)
+        {
+            if (LogixHealth.EnterpriseLibrary.Extensions.HeadersAndFooters.LogixFooter.ConnectFooter.TheNewConnectFooter != null)
+            {
+                @Html.Raw(@LogixHealth.EnterpriseLibrary.Extensions.HeadersAndFooters.LogixFooter.ConnectFooter.TheNewConnectFooter.ApplicationFooterPart1)
+            }
+            else
+            {
+                <div class="left">
+                    Copyright © <span id="copyright-date">@DateTime.Now.Year</span> LogixHealth. All Rights Reserved. | <a id="tou" href="#">Terms of Use</a> | <a id="contact" href="#">Contact Us</a>
+                </div>
+                <div class="right">
+                    <i class="icn footer-logo"></i>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="left">
+                Copyright © <span id="copyright-date">@DateTime.Now.Year</span> LogixHealth. All Rights Reserved. | <a id="tou" href="#">Terms of Use</a> | <a id="contact" href="#">Contact Us</a>
+            </div>
+        }
+    }
+</footer>
+

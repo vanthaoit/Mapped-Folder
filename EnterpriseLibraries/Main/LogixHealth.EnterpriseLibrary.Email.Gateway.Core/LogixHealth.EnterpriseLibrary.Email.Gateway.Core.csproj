@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>LogixHealth.EnterpriseLibrary.Email.Gateway</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>2019.1.0.0</Version>
+    <Authors>LogixHealth Solutions Pvt. Ltd</Authors>
+    <Copyright>Copyright © LogixHealth 2019</Copyright>
+    <Description>LogixHealth Enterprise Library for Sending Emails using .NET Core</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LogixHealth.EnterpriseLibrary.Core.Email.Gateway.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\CodeFiles\EmailGateway\EmailClient.cs" Link="EmailClient.cs" />
+    <Compile Include="..\CodeFiles\EmailGateway\IEmailClient.cs" Link="IEmailClient.cs" />
+  </ItemGroup>
+
+</Project>

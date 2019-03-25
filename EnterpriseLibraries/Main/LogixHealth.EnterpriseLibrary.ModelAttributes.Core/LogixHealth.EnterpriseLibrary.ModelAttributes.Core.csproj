@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>Copyright © LogixHealth 2019</Copyright>
+    <Description>LogixHealth Enterprise Library for Mapping Data Objects With Tables and Columns using .NET Core</Description>
+    <Company>LogixHealth Solutions Pvt. Ltd</Company>
+    <Authors>LogixHealth Solutions Pvt. Ltd</Authors>
+    <Version>2019.1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LogixHealth.EnterpriseLibrary.ModelAttributes.Core.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\CodeFiles\ModelAttributeUsage\DataModelAttribute.cs" Link="DataModelAttribute.cs" />
+  </ItemGroup>
+
+</Project>

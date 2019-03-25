@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{D3CE547F-11D6-4247-BE70-D9DC0CFA91BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLogger.Extensions", "LogixHealth.EnterpriseLogger.Extensions\LogixHealth.EnterpriseLogger.Extensions.csproj", "{EA9CD718-893C-43C6-B15F-E73087FF1EF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogixHealth.EnterpriseLogger.Extensions.Core", "LogixHealth.EnterpriseLogger.Extensions.Core\LogixHealth.EnterpriseLogger.Extensions.Core.csproj", "{9C4E1ABC-72C7-4071-AE04-07DBE4F8F504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogixHealth.EnterpriseLibrary.AppServices.Gateway", "..\..\EnterpriseLibraries\StableVersion\LogixHealth.EnterpriseLibrary.AppServices.Gateway\LogixHealth.EnterpriseLibrary.AppServices.Gateway.csproj", "{A77671A9-E654-4F8C-9C8B-3098A169483B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core", "..\..\EnterpriseLibraries\StableVersion\LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core\LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core.csproj", "{AB5F7526-3F70-4462-BDCD-033634B38D83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA9CD718-893C-43C6-B15F-E73087FF1EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9CD718-893C-43C6-B15F-E73087FF1EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9CD718-893C-43C6-B15F-E73087FF1EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9CD718-893C-43C6-B15F-E73087FF1EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C4E1ABC-72C7-4071-AE04-07DBE4F8F504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4E1ABC-72C7-4071-AE04-07DBE4F8F504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4E1ABC-72C7-4071-AE04-07DBE4F8F504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4E1ABC-72C7-4071-AE04-07DBE4F8F504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A77671A9-E654-4F8C-9C8B-3098A169483B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A77671A9-E654-4F8C-9C8B-3098A169483B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A77671A9-E654-4F8C-9C8B-3098A169483B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A77671A9-E654-4F8C-9C8B-3098A169483B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB5F7526-3F70-4462-BDCD-033634B38D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB5F7526-3F70-4462-BDCD-033634B38D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB5F7526-3F70-4462-BDCD-033634B38D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB5F7526-3F70-4462-BDCD-033634B38D83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A77671A9-E654-4F8C-9C8B-3098A169483B} = {D3CE547F-11D6-4247-BE70-D9DC0CFA91BD}
+		{AB5F7526-3F70-4462-BDCD-033634B38D83} = {D3CE547F-11D6-4247-BE70-D9DC0CFA91BD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9A79F16-CBBA-4627-B6CD-5723600F6913}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bedtfsapp001:8080/tfs/main
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LogixHealth.EnterpriseLogger.Extensions\\LogixHealth.EnterpriseLogger.Extensions.csproj
+		SccProjectName1 = LogixHealth.EnterpriseLogger.Extensions
+		SccLocalPath1 = LogixHealth.EnterpriseLogger.Extensions
+		SccProjectUniqueName2 = LogixHealth.EnterpriseLogger.Extensions.Core\\LogixHealth.EnterpriseLogger.Extensions.Core.csproj
+		SccProjectName2 = LogixHealth.EnterpriseLogger.Extensions.Core
+		SccLocalPath2 = LogixHealth.EnterpriseLogger.Extensions.Core
+		SccProjectUniqueName3 = ..\\..\\EnterpriseLibraries\\StableVersion\\LogixHealth.EnterpriseLibrary.AppServices.Gateway\\LogixHealth.EnterpriseLibrary.AppServices.Gateway.csproj
+		SccProjectTopLevelParentUniqueName3 = LogixHealth.EnterpriseLogger.Extensions.sln
+		SccProjectName3 = ../../EnterpriseLibraries/StableVersion/LogixHealth.EnterpriseLibrary.AppServices.Gateway
+		SccLocalPath3 = ..\\..\\EnterpriseLibraries\\StableVersion\\LogixHealth.EnterpriseLibrary.AppServices.Gateway
+		SccProjectUniqueName4 = ..\\..\\EnterpriseLibraries\\StableVersion\\LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core\\LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core.csproj
+		SccProjectTopLevelParentUniqueName4 = LogixHealth.EnterpriseLogger.Extensions.sln
+		SccProjectName4 = ../../EnterpriseLibraries/StableVersion/LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core
+		SccLocalPath4 = ..\\..\\EnterpriseLibraries\\StableVersion\\LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core
+	EndGlobalSection
+EndGlobal

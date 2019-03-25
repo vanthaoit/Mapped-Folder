@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="39d06864-f5bc-4aef-bfe1-354f36b2aada" ChangeDateTime="12/11/2018 05:18:30">
+    <Property Name="ElementName" Value="[dbo].[ExceptionLog].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ExceptionLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExceptionLogID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c3b8374c-5320-49b4-884d-300b7d601b63" ChangeDateTime="12/11/2018 05:30:11">
+    <Property Name="ElementName" Value="[dbo].[RequestDetail].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[RequestDetail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RequestDetailID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c60ba67e-b505-4265-9068-5ea44be75206" ChangeDateTime="12/11/2018 06:14:37">
+    <Property Name="ElementName" Value="[dbo].[AppPerfCounter].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AppPerfCounter]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AppPerfCounterID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="209d1de6-c0e1-47b9-9d9c-2a073e6b9d0a" ChangeDateTime="12/11/2018 06:17:08">
+    <Property Name="ElementName" Value="[dbo].[ServerPerfCounter].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ServerPerfCounter]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ServerPerfCounterID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ae45570d-d633-4ed3-a753-0e6c60f6d89b" ChangeDateTime="12/11/2018 06:30:24">
+    <Property Name="ElementName" Value="[dbo].[CdcAdditionalDetail].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CdcAdditionalDetail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CdcAdditionalDetailID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="13e0cdaa-24b6-43fe-b785-9b475a141383" ChangeDateTime="12/11/2018 06:32:06">
+    <Property Name="ElementName" Value="[dbo].[CdcAdditionalDetail].[FieldValue]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CdcAdditionalDetail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="OriginalData" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="369e9ea5-7a47-4a7c-8af3-02cbbcd7930a" ChangeDateTime="12/11/2018 06:34:55">
+    <Property Name="ElementName" Value="[dbo].[UserEventLog].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserEventLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserEventLogID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="79201f6b-8eee-4445-bffd-7038c8f4fe76" ChangeDateTime="12/11/2018 07:07:16">
+    <Property Name="ElementName" Value="[Logging].[CdcAdditionalDetail].[OriginalData]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Logging].[CdcAdditionalDetail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FieldValue" />
+  </Operation>
+</Operations>
