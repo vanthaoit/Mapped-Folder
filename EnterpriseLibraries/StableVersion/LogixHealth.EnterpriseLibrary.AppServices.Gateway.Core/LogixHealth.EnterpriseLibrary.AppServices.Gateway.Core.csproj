@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>LogixHealth.EnterpriseLibrary.AppServices.Gateway</RootNamespace>
+    <Version>2019.1.0.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core</PackageId>
+    <Authors>LogixHealth Solutions Pvt. Ltd</Authors>
+    <Product>LogixHealth.EnterpriseLibrary.Core.AppServices.Gateway</Product>
+    <Description>LogixHealth Enterprise Library for Accessing API/Services using .NET Core</Description>
+    <Copyright>Copyright © LogixHealth 2019</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LogixHealth.EnterpriseLibrary.Core.AppServices.Gateway.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\CodeFiles\ConnectedServicesGateway\LogixApiGateway.cs" Link="LogixApiGateway.cs" />
+    <Compile Include="..\CodeFiles\ConnectedServicesGateway\LogixServiceGateway.cs" Link="LogixServiceGateway.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
+  </ItemGroup>
+
+</Project>

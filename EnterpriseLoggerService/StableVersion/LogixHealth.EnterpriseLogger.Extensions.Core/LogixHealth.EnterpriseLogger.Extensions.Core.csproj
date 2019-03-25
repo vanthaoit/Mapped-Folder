@@ -1,0 +1,90 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>LogixHealth.EnterpriseLogger.Extensions</RootNamespace>
+    <Version>2019.1.0.1</Version>
+    <Authors>LogixHealth Solutions Pvt. Ltd</Authors>
+    <Description>LogixHealth Enterprise Library for Logging using .NET Core</Description>
+    <Copyright>Copyright © LogixHealth 2019</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <!--<ItemGroup>
+    <Compile Remove="ClientOsBrowser.cs" />
+    <Compile Remove="Configuration.cs" />
+    <Compile Remove="DatabaseLogger.cs" />
+    <Compile Remove="Expression.cs" />
+    <Compile Remove="ILogixChangeDataCaptureLogger.cs" />
+    <Compile Remove="ILogixExceptionLogger.cs" />
+    <Compile Remove="ILogixLogger.cs" />
+    <Compile Remove="ILogixUserEventLogger.cs" />
+    <Compile Remove="LoggerStartUp.cs" />
+    <Compile Remove="QueueLogger.cs" />
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <None Remove="LogixHealth.EnterpriseLibrary.Core.Logging.ServiceClient.csproj.vspscc" />
+    <None Remove="LogixHealth.EnterpriseLogger.Core.ServiceClient.csproj.vspscc" />
+    <None Remove="LogixHealth.EnterpriseLogger.Extensions.Core.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\CodeFiles\LoggerDataContracts\LogixLogChangeDataCapture.cs" Link="DataContracts\LogixLogChangeDataCapture.cs" />
+    <Compile Include="..\CodeFiles\LoggerDataContracts\LogixLogError.cs" Link="DataContracts\LogixLogError.cs" />
+    <Compile Include="..\CodeFiles\LoggerDataContracts\LogixLogEvent.cs" Link="DataContracts\LogixLogEvent.cs" />
+    <Compile Include="..\CodeFiles\LoggerDataContracts\LogixLogException.cs" Link="DataContracts\LogixLogException.cs" />
+    <Compile Include="..\CodeFiles\LoggerDataContracts\LogixLogFaultException.cs" Link="DataContracts\LogixLogFaultException.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\ClientOsBrowser.cs" Link="ClientOsBrowser.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\Configuration.cs" Link="Configuration.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\DatabaseLogger.cs" Link="DatabaseLogger.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\Expression.cs" Link="Expression.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\GlobalSuppressions.cs" Link="GlobalSuppressions.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\ILogixChangeDataCaptureLogger.cs" Link="ILogixChangeDataCaptureLogger.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\ILogixExceptionLogger.cs" Link="ILogixExceptionLogger.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\ILogixLogger.cs" Link="ILogixLogger.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\ILogixUserEventLogger.cs" Link="ILogixUserEventLogger.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\LoggerExtension.cs" Link="LoggerExtension.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\LoggerStartUp.cs" Link="LoggerStartUp.cs" />
+    <Compile Include="..\CodeFiles\LoggerExtensions\QueueLogger.cs" Link="QueueLogger.cs" />
+    <Compile Include="..\CodeFiles\LoggerServiceContracts\ILogixLoggerService.cs" Link="ServiceContracts\ILogixLoggerService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.1.1" />
+    <PackageReference Include="NLog" Version="4.5.11" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Web">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
+    <Folder Include="DataContracts\" />
+    <Folder Include="ServiceContracts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EnterpriseLibraries\StableVersion\LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core\LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>
